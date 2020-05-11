@@ -7,6 +7,7 @@ body{
   background-size: cover;
 }
 
+/* cabeçalho */
 header{
   background-color: #06eac3;
   margin: 35px;
@@ -43,7 +44,9 @@ header a:hover{
 header p{
   color: #ffffff;
 }
+/* cabeçalho */
 
+/* corpo */
 section{
   text-align: center;
 }
@@ -81,7 +84,47 @@ section{
 .child-7{
     flex-grow: 1;
 }
+/* corpo */
 
+/* formulario de contato */
+form{
+font-size: 16px;
+max-width: 500px;
+margin: 0 auto;
+padding: 5px 10px 10px 10px;
+
+}
+
+input, textarea{
+width: 474px;
+padding: 10px;
+}
+
+.enviar input {
+background-color: #06ebc4;
+height: 40px;
+width: 150px;
+font-weight: bold;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border: 1px solid;
+color: #FFF;
+cursor: pointer;
+}
+
+.enviar input:hover{
+background: #078;
+}
+
+textarea {
+width: 474px;
+height: 120px;
+line-height: 20px;
+}
+/* formulario de contato */
+
+/* rodapé */
 footer{
   text-align: center;
   padding: 30px;
@@ -98,3 +141,4 @@ footer a{
 footer a:hover{
   color: #ffffff;
 }
+/* rodapé */
