@@ -45,53 +45,41 @@ header p{
 }
 
 section{
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
 }
 
 .box{
-  display: block;
-  width: auto;
-  margin: auto;
-  padding: 20px;
-  max-width: 1100px;
+ display: block;
+ width: auto;
+ /* border: solid 1px rgb(230, 30, 91); */
+ margin: auto;
+ padding: 10px;
+ max-width: 1100px;
 }
 
 .box-1{
-  height: 200px;
-  margin-top: 10px;
-  margin-right: 340px;
-  margin-left: 340px;
-  margin-bottom: 100px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .child-1{
-    height: 140px;
-    width: 50%;
+  flex-grow: 1;
+  height: 250px;
 }
 
 .child-2{
-    width: 20%;
-    height: 60px;
+    flex-grow: 1;
 }
 
 .child-3{
-    width: 20%;
-    height: 60px;
+    flex-grow: 1;
 }
 
 .child-4{
-    width: 20%;
-    height: 60px;
+    flex-grow: 1;
 }
 
 .child-7{
-    width: 20%;
-    height: 60px;
+    flex-grow: 1;
 }
 
 footer{
