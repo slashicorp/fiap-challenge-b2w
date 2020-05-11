@@ -185,7 +185,9 @@ section{
 form{
   font-size: 16px;
   max-width: 500px;
-  margin: 0 auto;
+  left: auto;
+  right: auto;
+  margin: auto;
   padding: 5px 10px 10px 10px;
 
 }
