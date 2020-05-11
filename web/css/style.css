@@ -7,7 +7,6 @@ body{
   background-size: cover;
 }
 
-/* cabeçalho */
 header{
   background-color: #06eac3;
   margin: auto;
@@ -48,17 +47,12 @@ header a:hover{
 header p{
   color: #ffffff;
 }
-/* cabeçalho */
 
-/* corpo */
 section{
-<<<<<<< HEAD
   padding: 100px;
   margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
-=======
->>>>>>> 5806d4016a404e4372340ec74ae3dedd86772f52
   text-align: center;
 }
 
@@ -116,21 +110,12 @@ nav a:visited{
 
 
 .box{
-<<<<<<< HEAD
   display: block;
   width: auto;
   /*border: solid 1px rgb(230, 30, 91);*/
   margin: auto;
   padding: 10px;
   max-width: 1100px;
-=======
- display: block;
- width: auto;
- /* border: solid 1px rgb(230, 30, 91); */
- margin: auto;
- padding: 10px;
- max-width: 1100px;
->>>>>>> 5806d4016a404e4372340ec74ae3dedd86772f52
 }
 
 .box-1{
@@ -143,7 +128,6 @@ nav a:visited{
 }
 
 .child-2{
-<<<<<<< HEAD
   flex-grow: 1;
 }
 
@@ -167,63 +151,8 @@ form{
   margin: 0 auto;
   padding: 5px 10px 10px 10px;
 
-=======
-    flex-grow: 1;
 }
 
-.child-3{
-    flex-grow: 1;
-}
-
-.child-4{
-    flex-grow: 1;
-}
-
-.child-7{
-    flex-grow: 1;
-}
-/* corpo */
-
-/* formulario de contato */
-form{
-font-size: 16px;
-max-width: 500px;
-margin: 0 auto;
-padding: 5px 10px 10px 10px;
-
-}
-
-input, textarea{
-width: 474px;
-padding: 10px;
-}
-
-.enviar input {
-background-color: #06ebc4;
-height: 40px;
-width: 150px;
-font-weight: bold;
-border-radius: 5px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border: 1px solid;
-color: #FFF;
-cursor: pointer;
-}
-
-.enviar input:hover{
-background: #078;
-}
-
-textarea {
-width: 474px;
-height: 120px;
-line-height: 20px;
->>>>>>> 5806d4016a404e4372340ec74ae3dedd86772f52
-}
-/* formulario de contato */
-
-<<<<<<< HEAD
 input, textarea{
   width: 474px;
   padding: 10px;
@@ -255,9 +184,6 @@ textarea {
 
 
 
-=======
-/* rodapé */
->>>>>>> 5806d4016a404e4372340ec74ae3dedd86772f52
 footer{
   text-align: center;
   padding: 30px;
@@ -274,4 +200,3 @@ footer a{
 footer a:hover{
   color: #ffffff;
 }
-/* rodapé */
