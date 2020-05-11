@@ -113,13 +113,15 @@ nav a:visited{
   display: block;
   width: auto;
   /*border: solid 1px rgb(230, 30, 91);*/
-  margin: auto;
+  margin: unset;
   padding: 10px;
   max-width: 1100px;
 }
 
 .box-1{
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .child-1{
@@ -148,6 +150,8 @@ nav a:visited{
 form{
   font-size: 16px;
   max-width: 500px;
+  left: auto;
+  right: auto;
   margin: auto;
   padding: 5px 10px 10px 10px;
 
