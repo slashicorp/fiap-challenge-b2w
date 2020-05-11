@@ -9,12 +9,16 @@ body{
 
 header{
   background-color: #06eac3;
-  margin: 35px;
+  margin: auto;
   border-radius: 5px;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
   text-align: center;
   box-shadow: 2px 2px rgba(230, 230, 230);
 }
+
 
 header h1{
   font-family: 'Montserrat', sans-serif;
@@ -45,54 +49,140 @@ header p{
 }
 
 section{
+  padding: 100px;
+  margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
 
+/* NOTE: PADROES DO MENU - start*/
+nav{
+  width: auto;
+  font-size: 75%;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  position: center;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav a{
+  padding: 10px 40px;
+  font-size: 1.4em;
+}
+
+nav a:link{
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size:1.3em;
+  color: #06eac3;
+  background-color: white;
+  padding: 10px 40px;
+
+}
+
+nav a:hover{
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #048c76;
+  border-radius: 5px;
+  font-size:1.3em;
+}
+
+nav a:visited{
+  font-style: normal;
+  color: #ffffff;
+  background-color: #06eac3;
+  border-radius: 5px;
+  font-size:95%;
+}
+
+
+
 .box{
   display: block;
   width: auto;
+  /*border: solid 1px rgb(230, 30, 91);*/
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   max-width: 1100px;
 }
 
 .box-1{
-  height: 200px;
-  margin-top: 10px;
-  margin-right: 340px;
-  margin-left: 340px;
-  margin-bottom: 100px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .child-1{
-    height: 140px;
-    width: 50%;
+  flex-grow: 1;
+  height: 250px;
 }
 
 .child-2{
-    width: 20%;
-    height: 60px;
+  flex-grow: 1;
 }
 
 .child-3{
-    width: 20%;
-    height: 60px;
+  flex-grow: 1;
 }
 
 .child-4{
-    width: 20%;
-    height: 60px;
+  flex-grow: 1;
 }
 
 .child-7{
-    width: 20%;
-    height: 60px;
+  flex-grow: 1;
 }
+
+
+/* formulario de contato - start*/
+form{
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px 10px 10px 10px;
+
+}
+
+input, textarea{
+  width: 474px;
+  padding: 10px;
+}
+
+.enviar input {
+  background-color: #06ebc4;
+  height: 40px;
+  width: 150px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.enviar input:hover{
+  background: #078;
+}
+
+textarea {
+  width: 474px;
+  height: 120px;
+  line-height: 20px;
+}
+/* formulario de contato - end*/
+
+
 
 footer{
   text-align: center;
