@@ -1,12 +1,13 @@
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  background-color: rgba(240, 240, 240, 0);
+  background-color: rgba(240, 240, 240);
   margin: 0;
-  /*background-image: url();*/
+  /* background-image: url(); */
   background-size: cover;
 }
 
+/*cabeçalho*/
 header{
   background-color: #06eac3;
   margin: auto;
@@ -16,7 +17,7 @@ header{
   width: 100%;
   padding: 15px;
   text-align: center;
-  box-shadow: 2px 2px rgba(230, 230, 230, 0);
+  box-shadow: 2px 2px rgba(230, 230, 230);
 }
 
 
@@ -46,14 +47,6 @@ header a:hover{
 
 header p{
   color: #ffffff;
-}
-
-section{
-  padding: 100px;
-  margin-top: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
 }
 
 /* NOTE: PADROES DO MENU - start*/
@@ -106,20 +99,37 @@ nav a:visited{
   border-radius: 5px;
   font-size:95%;
 }
+/* NOTE: PADROES DO MENU - end*/
+/*cabeçalho*/
 
-
+/*corpo*/
+section{
+  padding: 100px;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
 .box{
   display: block;
   width: auto;
   /*border: solid 1px rgb(230, 30, 91);*/
-  margin: auto;
+  margin: unset;
   padding: 10px;
   max-width: 1100px;
 }
 
 .box-1{
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-2{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .child-1{
@@ -139,16 +149,43 @@ nav a:visited{
   flex-grow: 1;
 }
 
+.child-5{
+  flex-grow: 1;
+}
+
+.child-6{
+  flex-grow: 1;
+}
+
 .child-7{
   flex-grow: 1;
 }
 
+.child-8{
+  flex-grow: 1;
+}
+
+.child-9{
+  flex-grow: 1;
+}
+
+.child-10{
+  flex-grow: 1;
+}
+
+.equipe{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+/*corpo*/
 
 /* formulario de contato - start*/
 form{
   font-size: 16px;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
   padding: 5px 10px 10px 10px;
 
 }
@@ -182,8 +219,7 @@ textarea {
 }
 /* formulario de contato - end*/
 
-
-
+/*rodapé*/
 footer{
   text-align: center;
   padding: 30px;
@@ -200,3 +236,4 @@ footer a{
 footer a:hover{
   color: #ffffff;
 }
+/*rodapé*/
