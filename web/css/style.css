@@ -11,11 +11,10 @@ body{
 header{
   background-color: #06eac3;
   margin: auto;
-  border-radius: 5px;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px;
+  padding: 11px;
   text-align: center;
   box-shadow: 2px 2px rgba(230, 230, 230);
 }
@@ -105,10 +104,57 @@ nav a:visited{
 /*corpo*/
 section{
   padding: 100px;
-  margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+}
+
+section {
+	max-width: 800px;
+	margin: 100px auto;
+}
+
+section::after, section::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-text {
+	width: calc(60% - 40px);
+}
+
+.grid-img {
+	width: calc(40% - 40px);
+}
+
+section > div {
+	margin: 10px 20px;
+	float: left;
+}
+
+section img {
+	margin-top: 10px;
+}
+
+.img-right {
+	text-align: right;
+}
+
+
+section a {
+	max-width: 120px;
+	text-align: center;
+	border: 2px solid #05d2af;
+	text-decoration: none;
+	padding: 8px 20px 10px 20px;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
+section a:hover {
+	background: #05d2af;
+	color: white;
 }
 
 .box{
@@ -121,15 +167,15 @@ section{
 }
 
 .box-1{
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
 }
 
 .box-2{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-flex;
+  margin-left: inherit;
+  margin-right: inherit;
 }
 
 .child-1{
