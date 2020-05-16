@@ -1,13 +1,20 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
-  background-color: rgba(240, 240, 240);
+  background-color: rgba(240, 240, 240, 0);
   margin: auto;
   background-size: cover;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+  font-size: 70%;
+}
+
+p {
+  font-size: small;
+  text-align: center !important;
 }
 
 /*cabeçalho*/
@@ -19,12 +26,14 @@ header{
   width: 100%;
   padding: 11px;
   text-align: center;
-  box-shadow: 2px 2px rgba(230, 230, 230);
+  box-shadow: 2px 2px rgba(230, 230, 230, 0);
+  align-items:center;
+  justify-content: space-between;
 }
 
 
 header h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 50px;
   color: #000000;
   font-weight: lighter;
@@ -60,6 +69,10 @@ nav{
   margin: auto;
   position: center;
 }
+
+/*p{*/
+/*  text-transform: uppercase;*/
+/*}*/
 
 nav ul {
   text-align: center;
@@ -108,7 +121,7 @@ section{
   flex-wrap: wrap;
   text-align: justify;
   max-width: 800px;
-	margin: 100px auto;
+  margin: 100px auto;
 }
 
 section::after, section::before {
@@ -168,23 +181,43 @@ section a:hover {
 }
 
 .box-1{
-  text-align: center;
-  display: inline-flex;
-  margin-left: 380px;
-  margin-right: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .box-2{
-  text-align: center;
-  display: inline-flex;
-  margin-left: 20% !important;
-  margin-right: 20% !important;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .equipe{
+  text-align: center;
+  padding: 10px 10px  !important;
+  contain: unset !important;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   height: 120px;
   width: 120px;
   border-radius: 60px;
+}
+
+.valores{
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  width: 120px;
 }
 
 /*corpo*/
@@ -195,9 +228,12 @@ form{
   max-width: 500px;
   left: auto;
   right: auto;
-  margin: auto;
   padding: 5px 10px 10px 10px;
-
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 input, textarea{
