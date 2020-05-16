@@ -141,7 +141,6 @@ section img {
 
 #b2w{
   padding-top: 100px;
-
 }
 
 section a {
@@ -178,14 +177,14 @@ section a:hover {
 .box-2{
   text-align: center;
   display: inline-flex;
-  margin-left: 16% !important;
+  margin-left: 20% !important;
   margin-right: 20% !important;
 }
 
 .equipe{
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
 }
 
 /*corpo*/
