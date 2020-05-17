@@ -50,11 +50,3 @@ debounce = function(func, wait, immediate) {
         animeScroll();
     }, 200));
 })();
-
-function mouseEmCima(imagem) {
-  imagem.src="img/plataforma_b2w.png";
- }
-
-function mouseFora(imagem) {
-  imagem.src="img/logo_b2w.png";
-}

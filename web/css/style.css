@@ -209,7 +209,43 @@ h2{
   margin-left: auto;
   margin-right: auto;
 }
+/* troca o logo da b2w para o logo com as plataformas - START */
+ul#logoDaB2W{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
 
+ul#logoDaB2W li{
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-color: #ffffff;
+    -webkit-transition: all .2s ease-in;
+}
+
+ul#logoDaB2W li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+ul#logoDaB2W li#plataformaDaB2W{
+    background: url("../img/logo_b2w.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 220px 220px;
+    background-color: #ffffff;
+}
+
+ul#logoDaB2W li#plataformaDaB2W:hover{
+    background: url("../img/plataforma_b2w.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 280px 280px;
+    width: 300px;
+    height: 300px;
+}
+/* troca o logo da b2w para o logo com as plataformas - END */
 /*corpo*/
 
 /* formulario de contato - start*/
