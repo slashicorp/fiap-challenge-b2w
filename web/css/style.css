@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: "Source Sans Pro", sans-serif;
@@ -7,11 +11,6 @@ body{
   background-size: cover;
 }
 
-h2 {
-  text-align: center;
-  font-size: 70%;
-}
-
 /*cabeçalho*/
 header{
   background-color: #06eac3;
@@ -19,9 +18,8 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 11px;
+  padding: 5px;
   text-align: center;
-  box-shadow: 2px 2px rgba(230, 230, 230, 0);
   align-items:center;
   justify-content: space-between;
 }
@@ -29,20 +27,26 @@ header{
 
 header h1{
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   color: #000000;
   font-weight: lighter;
+  margin: 15px;
+  padding: 1px;
 }
 
 header h2{
   font-weight: lighter;
 }
 
+h2 {
+  text-align: center;
+  font-size: 70%;
+}
+
 header a{
   font-size: 20px;
   text-decoration: none;
   color: #ffffff;
-  /* color: #43ddbf; */
 }
 
 header a:hover{
@@ -65,9 +69,6 @@ nav{
   position: center;
 }
 
-/*p{*/
-/*  text-transform: uppercase;*/
-/*}*/
 nav ul {
   text-align: center;
 }
@@ -77,7 +78,7 @@ nav ul li {
 }
 
 nav a{
-  padding: 10px 40px;
+  padding: 1px 40px !important;
   font-size: 1.4em;
 }
 
@@ -89,10 +90,26 @@ nav a:link{
   padding: 10px 40px;
 
 }
-/* NOTE: PADROES DO MENU - end*/
-/*cabeçalho*/
 
-/*corpo*/
+nav a:hover{
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #048c76;
+  border-radius: 5px;
+  font-size:1.3em;
+}
+
+nav a:visited{
+  font-style: normal;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size:95%;
+}
+
+
+/* NOTE: PADROES DO MENU - end*/
+
 section{
   display: flex;
   flex-wrap: wrap;
@@ -111,31 +128,31 @@ section h2{
 }
 
 section::after, section::before {
-	content: '';
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .grid-text {
-	width: 60%;
+  width: 60%;
   height: 40%
 }
 
 .grid-img {
-	width: calc(40% - 40px);
+  width: calc(40% - 40px);
 }
 
 section > div {
-	margin: auto;
-	float: left;
+  margin: auto;
+  float: left;
 }
 
 section img {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .img-right {
-	text-align: right;
+  text-align: right;
 }
 
 #b2w{
@@ -144,18 +161,19 @@ section img {
 
 section a {
   margin: 165px;
-	max-width: 120px;
-	text-align: center;
-	border: 2px solid #05d2af;
-	text-decoration: none;
-	padding: 8px 20px 10px 20px;
-	text-transform: uppercase;
-	border-radius: 4px;
+  max-width: 120px;
+  text-align: center;
+  border: 2px solid #05d2af;
+  text-decoration: none;
+  padding: 8px 20px 10px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #000000;
 }
 
 section a:hover {
-	background: #05d2af;
-	color: white;
+  background: #05d2af;
+  color: white;
 }
 
 h2{
@@ -190,7 +208,7 @@ h2{
 
 .equipe{
   flex-grow: 1;
-  height: 250px;
+  /*height: 250px;*/
   text-align: center;
   padding: 10px 10px  !important;
   contain: unset !important;
@@ -211,39 +229,39 @@ h2{
 }
 /* troca o logo da b2w para o logo com as plataformas - START */
 ul#logoDaB2W{
-    width: 700px;
-    margin: 0 auto;
-    padding: 50px;
-    overflow: hidden;
-    list-style: none;
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+  list-style: none;
 }
 
 ul#logoDaB2W li{
-    float: left;
-    width: 230px;
-    height: 230px;
-    margin: 10px;
-    background-color: #ffffff;
-    -webkit-transition: all .2s ease-in;
+  float: left;
+  width: 230px;
+  height: 230px;
+  margin: 10px;
+  background-color: #ffffff;
+  -webkit-transition: all .2s ease-in;
 }
 
 ul#logoDaB2W li:hover{
-    -webkit-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
 }
 
 ul#logoDaB2W li#plataformaDaB2W{
-    background: url("../img/logo_b2w.png") no-repeat;
-    background-position: 50% 50%;
-    background-size: 220px 220px;
-    background-color: #ffffff;
+  background: url("../img/logo_b2w.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 220px 220px;
+  background-color: #ffffff;
 }
 
 ul#logoDaB2W li#plataformaDaB2W:hover{
-    background: url("../img/plataforma_b2w.png") no-repeat;
-    background-position: 50% 50%;
-    background-size: 280px 280px;
-    width: 300px;
-    height: 300px;
+  background: url("../img/plataforma_b2w.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 280px 280px;
+  width: 300px;
+  height: 300px;
 }
 /* troca o logo da b2w para o logo com as plataformas - END */
 /*corpo*/
@@ -254,7 +272,7 @@ form{
   max-width: 500px;
   left: auto;
   right: auto;
-  padding: 5px 10px 10px 10px;
+  padding: 0 5rem;
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
@@ -265,10 +283,21 @@ form{
 input, textarea{
   width: 474px;
   padding: 10px;
+  border-style: double;
+  border-radius: 6px !important;
+  border-color: #f5f5f5 !important;
+}
+
+input:hover{
+  border-color:#05d2af!important;
+}
+
+textarea:hover{
+  border-color:#05d2af!important;
 }
 
 .enviar input {
-  background-color: #06ebc4;
+  background-color: #05d2af;
   height: 40px;
   width: 150px;
   font-weight: bold;
@@ -276,18 +305,19 @@ input, textarea{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: 1px solid;
-  color: #FFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
-.enviar input:hover{
-  background: #078;
+.enviar input:hover {
+  background: #048c76;
 }
 
 textarea {
   width: 474px;
   height: 120px;
   line-height: 20px;
+  border-color: #f5f5f5 !important;
 }
 /* formulario de contato - end*/
 
