@@ -7,11 +7,6 @@ body{
   background-size: cover;
 }
 
-h2 {
-  text-align: center;
-  font-size: 70%;
-}
-
 /*cabeçalho*/
 header{
   background-color: #06eac3;
@@ -19,7 +14,7 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 11px;
+  padding: 0%;
   text-align: center;
   box-shadow: 2px 2px rgba(230, 230, 230, 0);
   align-items:center;
@@ -29,13 +24,21 @@ header{
 
 header h1{
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   color: #000000;
   font-weight: lighter;
+  margin: 15px;
+  padding: 1px;
+  text-shadow: 2px 2px 15px #048c76;
 }
 
 header h2{
   font-weight: lighter;
+}
+
+h2 {
+  text-align: center;
+  font-size: 70%;
 }
 
 header a{
@@ -65,9 +68,6 @@ nav{
   position: center;
 }
 
-/*p{*/
-/*  text-transform: uppercase;*/
-/*}*/
 nav ul {
   text-align: center;
 }
@@ -77,7 +77,7 @@ nav ul li {
 }
 
 nav a{
-  padding: 10px 40px;
+  padding: 1px 40px !important;
   font-size: 1.4em;
 }
 
@@ -89,10 +89,24 @@ nav a:link{
   padding: 10px 40px;
 
 }
-/* NOTE: PADROES DO MENU - end*/
-/*cabeçalho*/
 
-/*corpo*/
+nav a:hover{
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #048c76;
+  border-radius: 5px;
+  font-size:1.3em;
+}
+
+nav a:visited{
+  font-style: normal;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size:95%;
+}
+/* NOTE: PADROES DO MENU - end*/
+
 section{
   display: flex;
   flex-wrap: wrap;
@@ -190,7 +204,7 @@ h2{
 
 .equipe{
   flex-grow: 1;
-  height: 250px;
+  /*height: 250px;*/
   text-align: center;
   padding: 10px 10px  !important;
   contain: unset !important;
@@ -280,8 +294,8 @@ input, textarea{
   cursor: pointer;
 }
 
-.enviar input:hover{
-  background: #078;
+.enviar input:hover {
+  background: #048c76;
 }
 
 textarea {
