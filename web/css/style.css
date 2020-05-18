@@ -276,7 +276,7 @@ form{
   max-width: 500px;
   left: auto;
   right: auto;
-  padding: 5px 10px 10px 10px;
+  padding: 0 5rem;
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
@@ -287,10 +287,11 @@ form{
 input, textarea{
   width: 474px;
   padding: 10px;
+  border-radius: 5px !important;
 }
 
 .enviar input {
-  background-color: #06ebc4;
+  background-color: #05d2af;
   height: 40px;
   width: 150px;
   font-weight: bold;
@@ -298,7 +299,7 @@ input, textarea{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: 1px solid;
-  color: #FFF;
+  color: #ffffff;
   cursor: pointer;
 }
 
