@@ -82,6 +82,32 @@ nav a{
   font-size: 1.4em;
 }
 
+nav a:link{
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size:1.3em;
+  padding: 10px 40px;
+
+}
+
+nav a:hover{
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #048c76;
+  border-radius: 5px;
+  font-size:1.3em;
+}
+
+nav a:visited{
+  font-style: normal;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size:95%;
+}
+
+
 /* NOTE: PADROES DO MENU - end*/
 
 section{
