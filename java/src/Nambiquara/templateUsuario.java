@@ -20,25 +20,56 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
     private String cargo;
     private String departamento;
     private String nivel;
-    
-    
+
+
     public void CadastroCandidato() {
+
         String nome = JOptionPane.showInputDialog(null, "Digite seu nome: ", ".:Cadastro:.", 1);
         setNome(nome);
+
         String email = JOptionPane.showInputDialog(null, "Digite seu email: ", ".:Cadastro:.", 1);
         setEmail(email);
-        String endereco = JOptionPane.showInputDialog(null, "Digite seu email: ", ".:Cadastro:.", 1);
+
+        String endereco = JOptionPane.showInputDialog(null, "Digite seu endereço: ", ".:Cadastro:.", 1);
         setEndereco(endereco);
-        String telefone = JOptionPane.showInputDialog(null, "Digite seu email: ", ".:Cadastro:.", 1);
+
+        String telefone = JOptionPane.showInputDialog(null, "Digite seu telefone: ", ".:Cadastro:.", 1);
         setTelefone(telefone);
-        String curso = JOptionPane.showInputDialog(null, "Digite seu curso!", ".:Cadastro:.", 1);
-        setCurso(curso);
-        String certificacao = JOptionPane.showInputDialog(null, "Digite seu certificacao!", ".:Cadastro:.", 1);
-        setCertificacao(certificacao);
-        String cpf = JOptionPane.showInputDialog(null, "Digite seu cpf!", ".:Cadastro:.", 1);
+
+        int cursoSimOuNao = JOptionPane.showConfirmDialog(null, "Deseja adicionar cursos?  ", ".:Cadastro de cursos:.",JOptionPane.YES_NO_OPTION);
+        if (cursoSimOuNao == JOptionPane.YES_OPTION) {
+            int i = 0;
+            while (i<3){
+                String curso = JOptionPane.showInputDialog(null, "Nome do curso: ", "..:: Cadastrando Curso ::..", 1);
+                setCurso(curso);
+
+                i++;
+            }
+        }
+
+        int certificSimOuNao = JOptionPane.showConfirmDialog(null, "Adicionar certificações?  ", ".:Cadastro de certificações:.",JOptionPane.YES_NO_OPTION);
+        if (certificSimOuNao == JOptionPane.YES_OPTION) {
+            int i = 0;
+            while (i<3){
+                String certificacao = JOptionPane.showInputDialog(null, "Nome e ID da Certificação (Exp.: Nome, ID): ", "..:: Cadastrando Certificações ::..", 1);
+                setCertificacao(certificacao);
+                i++;
+            }
+        }
+
+        String cpf = JOptionPane.showInputDialog(null, "Digite seu cpf:", ".:Cadastro de CPF:.", 1);
         setCpf(cpf);
-        String idioma = JOptionPane.showInputDialog(null, "Digite seu idioma!", ".:Cadastro:.", 1);
-        setIdioma(idioma);
+
+        int idiomasSimOuNao = JOptionPane.showConfirmDialog(null, "Proeficiência em Idiomas:  ", ".:Cadastro de Idiomas:.",JOptionPane.YES_NO_OPTION);
+        if (idiomasSimOuNao == JOptionPane.YES_OPTION) {
+            int i = 0;
+            while (i<3){
+                String idimoa = JOptionPane.showInputDialog(null, "Idioma: ", "..:: Cadastrando Idiomas ::..", 1);
+                setIdioma(idimoa);
+                i++;
+            }
+        }
+
         String login = JOptionPane.showInputDialog(null, "Digite seu login!", ".:Cadastro:.", 1);
         setLogin(login);
         String pretencaoSalarial = JOptionPane.showInputDialog(null, "Digite seu pretencaoSalarial!", ".:Cadastro:.", 1);
@@ -127,7 +158,7 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
         this.login = login;
     }
 
-    public double getPretencaoSalarial() {
+    public String getPretencaoSalarial() {
         return pretencaoSalarial;
     }
 
