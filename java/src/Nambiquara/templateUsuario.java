@@ -36,10 +36,11 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
         String telefone = JOptionPane.showInputDialog(null, "Digite seu telefone: ", ".:Cadastro:.", 1);
         setTelefone(telefone);
 
-        int cursoSimOuNao = JOptionPane.showConfirmDialog(null, "Deseja adicionar cursos?  ", ".:Cadastro de cursos:.",JOptionPane.YES_NO_OPTION);
+        int cursoSimOuNao = JOptionPane.showConfirmDialog(null, "Deseja adicionar algum curso?  ", ".:Cadastro de cursos:.",JOptionPane.YES_NO_OPTION);
+        int cursoQuantidade = Integer.parseInt(JOptionPane.showInputDialog(null, "Deseja adicionar quantos cursos?", ".:Cadastro de cursos:", 1));
         if (cursoSimOuNao == JOptionPane.YES_OPTION) {
             int i = 0;
-            while (i<3){
+            while (i<cursoQuantidade){
                 String curso = JOptionPane.showInputDialog(null, "Nome do curso: ", "..:: Cadastrando Curso ::..", 1);
                 setCurso(curso);
 
@@ -47,10 +48,11 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
             }
         }
 
-        int certificSimOuNao = JOptionPane.showConfirmDialog(null, "Adicionar certificações?  ", ".:Cadastro de certificações:.",JOptionPane.YES_NO_OPTION);
+        int certificSimOuNao = JOptionPane.showConfirmDialog(null, "Deseja adicionar alguma certificação?  ", ".:Cadastro de certificações:.",JOptionPane.YES_NO_OPTION);
+        int certificQuantidade = Integer.parseInt(JOptionPane.showInputDialog(null, "Deseja adicionar quantas certicicações?", ".:Cadastro de certificações:", 1));
         if (certificSimOuNao == JOptionPane.YES_OPTION) {
             int i = 0;
-            while (i<3){
+            while (i<certificQuantidade){
                 String certificacao = JOptionPane.showInputDialog(null, "Nome e ID da Certificação (Exp.: Nome, ID): ", "..:: Cadastrando Certificações ::..", 1);
                 setCertificacao(certificacao);
                 i++;
@@ -60,17 +62,18 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
         String cpf = JOptionPane.showInputDialog(null, "Digite seu cpf:", ".:Cadastro de CPF:.", 1);
         setCpf(cpf);
 
-        int idiomasSimOuNao = JOptionPane.showConfirmDialog(null, "Proeficiência em Idiomas:  ", ".:Cadastro de Idiomas:.",JOptionPane.YES_NO_OPTION);
+        int idiomasSimOuNao = JOptionPane.showConfirmDialog(null, "Deseja adicionar alguma Proeficiência em Idiomas? ", ".:Cadastro de Idiomas:.",JOptionPane.YES_NO_OPTION);
+        int idiomasQuantidade = Integer.parseInt(JOptionPane.showInputDialog(null, "Deseja adicionar quantos idiomas?", ".:Cadastro de idiomas:", 1));
         if (idiomasSimOuNao == JOptionPane.YES_OPTION) {
             int i = 0;
-            while (i<3){
+            while (i<idiomasQuantidade){
                 String idimoa = JOptionPane.showInputDialog(null, "Idioma: ", "..:: Cadastrando Idiomas ::..", 1);
                 setIdioma(idimoa);
                 i++;
             }
         }
 
-        String login = JOptionPane.showInputDialog(null, "Digite seu login!", ".:Cadastro:.", 1);
+        String login = JOptionPane.showInputDialog(null, "Cadastre seu login! 'primeiro.ultimonome' ",".:Cadastro:.", 1);
         setLogin(login);
         String pretencaoSalarial = JOptionPane.showInputDialog(null, "Digite seu pretencaoSalarial!", ".:Cadastro:.", 1);
         setPretencaoSalarial(pretencaoSalarial);
@@ -81,9 +84,9 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
                 deficiencia = false;
             }
         setDeficiencia(deficiencia);
-        String emai = JOptionPane.showInputDialog(null, "Digite seu email!", ".:Cadastro:.", 1);
-        setEmail(email);
-        setNivel("1");
+        String senha = JOptionPane.showInputDialog(null, "Digite sua senha!", ".:Cadastro:.", 1);
+        setEmail(senha);
+        setNivel("CANDIDATO");
     }
 
     public String getNome() {
