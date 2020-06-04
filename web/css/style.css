@@ -61,7 +61,7 @@ header p{
 
 
 #b2w{
-  padding-top: initial !important;
+  padding-top: 200px !important;
 }
 
 #problematica {
@@ -70,10 +70,6 @@ header p{
 
 #solucao{
   padding-top: 200px !important;
-}
-
-div.grid-img{
-  margin-top: 200px !important;
 }
 
 #valores{
@@ -178,6 +174,10 @@ section > div {
 
 section img {
   margin-top: 10px;
+}
+
+.img-solucao {
+  margin-top: 220px !important;
 }
 
 .img-right {
