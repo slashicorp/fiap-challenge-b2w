@@ -59,6 +59,31 @@ header p{
   color: #ffffff;
 }
 
+
+#b2w{
+  padding-top: 200px !important;
+}
+
+#problematica {
+  padding-top: 200px !important;
+}
+
+#solucao{
+  padding-top: 200px !important;
+}
+
+#valores{
+  padding-top: 200px !important;
+}
+
+#time{
+  padding-top: 200px !important;
+}
+
+#contato{
+  padding-top: 10px !important;
+}
+
 /* NOTE: PADROES DO MENU - start*/
 nav{
   width: auto;
