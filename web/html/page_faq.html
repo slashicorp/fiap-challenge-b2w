@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gh3 Tech</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>GH3 CORP</h1>
+        <p>Sistema de digitalização de documentos para o RH</p>
+        <nav class="navbar">
+            <div class="nav">
+                <a class="active" href="../index.html">Início</a>
+                <a href="../index.html#b2w">B2W</a>
+                <a href="../index.html#problematica">Problemática</a>
+                <a href="../index.html#solucao">Solução</a>
+                <a href="../index.html#time">Quem somos</a>
+                <a href="../index.html#contato">Contato</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--CHAT start-->
+    <div class="principal" id="chat-popup">
+        <div class="conversa">
+            <span>Digitando ...</span>
+        </div>
+        <input type="text" id="pergunta" name="pergunta" class="campo"
+               placeholder="Digite sua pergunta" />
+        <button id="enviar" onclick="carregarDados()">Enviar</button>
+    </div>
+    <br>
+    <!--Chat end-->
+
+
+
+    <footer>
+        <p>Todos os direitos reservados - ©Gh3 Corp</p>
+        <a href="https://github.com/gh3-tech-user" target="_blank"><i class="fab fa-github"></i></a>
+        <div data-role="content">
+            <ul data-role="listview" id="messageList">
+                <!-- <li><span class="username">User123:</span>This is my message.</li> -->
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script type="text/javascript" src="js/chat_faq.js"></script>
+
+</body>
+</html>

@@ -304,14 +304,14 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
   /*left: auto;*/
   /*right: auto;*/
   padding-top: 50px;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   text-align: justify;
   margin: 0 auto;
   justify-content: center;
 
-  position:fixed;
-  right:100px;
+  position:center;
+  /*right:100px;*/
   top: 350px;
 }
 
@@ -345,7 +345,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
   color: #048c76;
   font-size: 14px;
   overflow: auto;
-  position: relative;
+  /*position: relative;*/
 }
 
 .conversa span {
@@ -366,7 +366,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
   box-shadow: 0 0 6px #B2B2B2;
   display: inline-block;
   padding: 10px 18px;
-  position: relative;
+  /*position: relative;*/
   vertical-align: top;
 }
 
@@ -379,7 +379,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 
 .bot:after {
   content: '';
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
   top: 50%;
   width: 0;
@@ -401,17 +401,17 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 
 .me:after {
   content: '';
-  position: absolute;
+  /*position: absolute;*/
   right: 0;
   top: 50%;
   width: 0;
   height: 0;
   border: 20px solid transparent;
   border-left-color: #048c76;
-  border-right: 0;
+  /*border-right: 0;*/
   border-top: 0;
   margin-top: -10px;
-  margin-right: -20px;
+  /*margin-right: -20px;*/
 }
 
 /*Chat bot end*/
