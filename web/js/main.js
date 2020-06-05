@@ -17,7 +17,6 @@ function carregarDados() {
             session_id = resultado.session_id;
         }
     };
-
     xhr.onloadstart = () => {
         let digitando = document.querySelector("span");
         digitando.classList.add("ativo");

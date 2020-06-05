@@ -81,7 +81,8 @@ header p{
 }
 
 #contato{
-  padding-top: 10px !important;
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
 }
 
 /* NOTE: PADROES DO MENU - start*/
@@ -300,14 +301,18 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 #chat-popup{
   font-size: 16px;
   max-width: 500px;
-  left: auto;
-  right: auto;
+  /*left: auto;*/
+  /*right: auto;*/
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
   margin: 0 auto;
   justify-content: center;
+
+  position:fixed;
+  right:100px;
+  top: 350px;
 }
 
 /*.principal {*/
@@ -410,6 +415,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 }
 
 /*Chat bot end*/
+
 
 /* formulario de contato - start*/
 form{
