@@ -301,17 +301,13 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 #chat-popup{
   font-size: 16px;
   max-width: 500px;
-  /*left: auto;*/
-  /*right: auto;*/
   padding-top: 50px;
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   text-align: justify;
   margin: 0 auto;
   justify-content: center;
-
-  position:center;
-  /*right:100px;*/
+  right:100px;
   top: 350px;
 }
 
@@ -345,7 +341,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
   color: #048c76;
   font-size: 14px;
   overflow: auto;
-  /*position: relative;*/
+  position: relative;
 }
 
 .conversa span {
@@ -366,7 +362,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
   box-shadow: 0 0 6px #B2B2B2;
   display: inline-block;
   padding: 10px 18px;
-  /*position: relative;*/
+  position: relative;
   vertical-align: top;
 }
 
@@ -379,7 +375,7 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 
 .bot:after {
   content: '';
-  /*position: absolute;*/
+  position: absolute;
   left: 0;
   top: 50%;
   width: 0;
@@ -401,17 +397,83 @@ ul#logoDaB2W li#plataformaDaB2W:hover{
 
 .me:after {
   content: '';
-  /*position: absolute;*/
+  position: absolute;
   right: 0;
   top: 50%;
   width: 0;
   height: 0;
   border: 20px solid transparent;
   border-left-color: #048c76;
-  /*border-right: 0;*/
+  border-right: 0;
   border-top: 0;
   margin-top: -10px;
-  /*margin-right: -20px;*/
+  margin-right: -20px;
+}
+
+span.faq{
+
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+span.faq {
+  margin: auto;
+  position: fixed;
+  top: 650px;
+  width: 100%;
+  padding: 20px;
+}
+
+.principal h2 {
+  color: #ffffff;
 }
 
 /*Chat bot end*/
