@@ -464,6 +464,14 @@ span.faq{
   }
 }
 
+span.faq {
+  margin: auto 1800px;
+  position: fixed;
+  top: 500px;
+  width: 100%;
+  padding: 5px;
+}
+
 /*Chat bot end*/
 
 
