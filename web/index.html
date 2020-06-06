@@ -23,6 +23,7 @@
                 <a href="#time">Quem somos</a>
                 <a href="#contato">Contato</a>
             </div>
+
         </nav>
     </header>
 
@@ -149,15 +150,35 @@
         <p class="enviar">
             <input type="submit" name="enviar" value="Enviar">
         </p>
+
+        <!--CHAT start-->
+        <div class="principal" id="chat-popup">
+            <h2>Podemos ajudar?</h2>
+            <div class="conversa">
+                <span>Digitando ...</span>
+            </div>
+            <input type="text" id="pergunta" name="pergunta" class="campo"
+                   placeholder="Digite sua pergunta" />
+            <button id="enviar" onclick="carregarDados()">Enviar</button>
+        </div>
+        <br>
+        <!--Chat end-->
     </form>
+
 
 
     <footer>
         <p>Todos os direitos reservados - ©Gh3 Corp</p>
         <a href="https://github.com/gh3-tech-user" target="_blank"><i class="fab fa-github"></i></a>
+        <div data-role="content">
+            <ul data-role="listview" id="messageList">
+                <!-- <li><span class="username">User123:</span>This is my message.</li> -->
+            </ul>
+        </div>
     </footer>
 </div>
-<script src="js/app.js"></script>
-<script src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="js/chat_faq.js"></script>
+
 </body>
 </html>
