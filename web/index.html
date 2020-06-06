@@ -150,8 +150,12 @@
         <p class="enviar">
             <input type="submit" name="enviar" value="Enviar">
         </p>
+    </form>
 
-        <!--CHAT start-->
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
         <div class="principal" id="chat-popup">
             <h2>Podemos ajudar?</h2>
             <div class="conversa">
@@ -161,9 +165,8 @@
                    placeholder="Digite sua pergunta" />
             <button id="enviar" onclick="carregarDados()">Enviar</button>
         </div>
-        <br>
-        <!--Chat end-->
-    </form>
+      </div>
+    </div>
 
 
 
@@ -172,13 +175,11 @@
         <a href="https://github.com/gh3-tech-user" target="_blank"><i class="fab fa-github"></i></a>
         <div data-role="content">
             <ul data-role="listview" id="messageList">
-                <!-- <li><span class="username">User123:</span>This is my message.</li> -->
             </ul>
         </div>
     </footer>
 </div>
-
-<script type="text/javascript" src="js/chat_faq.js"></script>
-
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
