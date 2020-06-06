@@ -5,7 +5,7 @@ function carregarDados() {
     let input = document.querySelector("#pergunta");
     if(input.value) criarMensagem(input.value, "me");
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", `https://nodered-allan-fiap.mybluemix.net/chat?mensagem=${input.value ? input.value : ""}&session_id=${session_id}`);
+    xhr.open("GET", `https://node-red-faq.mybluemix.net/chat?mensagem=${input.value ? input.value : ""}&session_id=${session_id}`);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     xhr.onload = () => {
