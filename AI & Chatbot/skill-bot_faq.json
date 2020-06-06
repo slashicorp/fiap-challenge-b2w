@@ -1,0 +1,755 @@
+{
+  "intents": [
+    {
+      "intent": "reserva_documento",
+      "examples": [
+        {
+          "text": "Ao subir um documento, ele é reservado?"
+        },
+        {
+          "text": "Meu documento fica reservado após digitalizar?"
+        },
+        {
+          "text": "Tenho uma reserva de comprovante quando coloco o documento no processo?"
+        },
+        {
+          "text": "O documento do meu processo já fica automaticamente reservado?"
+        },
+        {
+          "text": "O comprovante adicionado fica reservado?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "digitalizar_documento",
+      "examples": [
+        {
+          "text": "Você pode me ajudar a digitalizar um documento?"
+        },
+        {
+          "text": "Eu queria ajuda para digitalizar"
+        },
+        {
+          "text": "Qual documento você me recomenda digitalizar primeiro?"
+        },
+        {
+          "text": "Me ajude a subir meus documentos?"
+        },
+        {
+          "text": "Qual a melhor maneira para eu digitalizar meus documentos?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "aprovar_documento",
+      "examples": [
+        {
+          "text": "Quando o documento que eu digitalizei vai ser aprovado?"
+        },
+        {
+          "text": "Digitalizei um documento há mais de dois dias e quero saber quando será aprovado?"
+        },
+        {
+          "text": "Quanto tempo demora para o meu documento ser aprovado?"
+        },
+        {
+          "text": "Quero saber em quanto tempo o meu documento vai ser aprovado?"
+        },
+        {
+          "text": "O prazo do processo digital é diferente?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "Tamo Junto"
+        },
+        {
+          "text": "Valeu, você fez um bom trabalho"
+        },
+        {
+          "text": "Valeu"
+        },
+        {
+          "text": "Obrigado pela ajuda"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudar",
+      "examples": [
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Como você está?"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Olá! Tudo bem?"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Sauve"
+        },
+        {
+          "text": "Eai"
+        }
+      ],
+      "description": "Tratar os tipos de saudações "
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "documento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Certificado de Reservista",
+          "synonyms": [
+            "reservita"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Certidão de Nascimento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cadastro de pessoas fisicas",
+          "synonyms": [
+            "CPF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cadastro Único",
+          "synonyms": [
+            "CU"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Carte de Habilitação",
+          "synonyms": [
+            "CNH"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Registro Geral",
+          "synonyms": [
+            "RG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Comprovante de Escolaridade",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carteira de Trabalho e Previdência Social",
+          "synonyms": [
+            "CTPS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Titulo de Eleitor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PIS",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "processos_seletivo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Administração",
+          "synonyms": [
+            "adm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Banco de Dados",
+          "synonyms": [
+            "bd"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Auxiliar de Produção",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Marketing",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Atendimento ao Cliente",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Análise de Desenvolvimento de Sistemas",
+          "synonyms": [
+            "ads"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Recursos Humanos",
+          "synonyms": [
+            "rh"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ciência da Computação",
+          "synonyms": [
+            "cdc"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tecnologia da Informação",
+          "synonyms": [
+            "TI"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sistema da Informação",
+          "synonyms": [
+            "si"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "ok",
+            "positivo",
+            "afirmativo",
+            "claro",
+            "pode ser"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "nao",
+            "negativo",
+            "nem",
+            "só que não",
+            "sqn",
+            "so que nao",
+            "nunca",
+            "deus me livre"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "saudacao-formal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Boa noite",
+          "synonyms": [
+            "boa noite"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Boa tarde",
+          "synonyms": [
+            "boa tarde"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bom dia",
+          "synonyms": [
+            "bom dia"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1585960366657",
+      "variable": "$sim_nao",
+      "dialog_node": "slot_1_1585960457692",
+      "previous_sibling": "response_8_1585965378529"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1585960366657",
+      "variable": "$sim_nao_3",
+      "dialog_node": "slot_3_1585961049702",
+      "previous_sibling": "slot_6_1585960999494"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1585960366657",
+      "variable": "$documento",
+      "dialog_node": "slot_2_1585960673784",
+      "previous_sibling": "slot_1_1585960457692"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1585960366657",
+      "variable": "$sim_nao_2",
+      "dialog_node": "slot_6_1585960999494",
+      "previous_sibling": "slot_2_1585960673784"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1585960366657",
+      "dialog_node": "response_8_1585965378529"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Para @documento, basta apenas retirar o plástico se houver e fotografar o comprovante com flash de maneira legível"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1585960999494",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1585960999504",
+      "previous_sibling": "handler_8_1585960999503"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1585960999494",
+      "context": {
+        "sim_nao_2": "@sim-nao"
+      },
+      "conditions": "@sim-nao",
+      "event_name": "input",
+      "dialog_node": "handler_8_1585960999503"
+    },
+    {
+      "type": "standard",
+      "title": "Processo Seletivo",
+      "parent": "node_2_1583622869758",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@processos_seletivo",
+      "dialog_node": "node_10_1583622905276"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Oi!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1588986822553",
+      "conditions": "!@saudacao-formal",
+      "dialog_node": "response_5_1588987138789",
+      "previous_sibling": "response_8_1588987091806"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "@saudacao-formal para você também! <? intents ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1588986822553",
+      "conditions": "@saudacao-formal",
+      "dialog_node": "response_8_1588987091806"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Legal, vou te ajudar. Irei fazer algumas perguntas para você, ok?  "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1585960457692",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1585960457711",
+      "previous_sibling": "handler_2_1585960457711"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Posso ajudar em algo mais? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1585960457692",
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "@sim-nao:não",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1585962164376",
+      "previous_sibling": "handler_3_1585960457711"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1585960457692",
+      "context": {
+        "sim_nao": "@sim-nao"
+      },
+      "conditions": "@sim-nao",
+      "event_name": "input",
+      "dialog_node": "handler_2_1585960457711"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Qual comprovante gostaria de digitalizar?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1585960673784",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1585960673789",
+      "previous_sibling": "handler_2_1585960673789"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1585960673784",
+      "context": {
+        "documento": "@documento"
+      },
+      "conditions": "@documento",
+      "event_name": "input",
+      "dialog_node": "handler_2_1585960673789"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Acesso a \"área do candidato\", navegue até o menu \"Entrega de documentos\" e clique em \"Anexar\", para finalizar clique em \"Enviar\"."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1585961049702",
+      "conditions": "@sim-nao:sim",
+      "event_name": "filled",
+      "dialog_node": "handler_3_1585962327467",
+      "previous_sibling": "handler_2_1585961049707"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Para fazer o upload do documento, precisa de ajuda?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1585961049702",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1585961049707",
+      "previous_sibling": "handler_10_1585961049707"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Okay, posso ajudar em algo mais? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1585961049702",
+      "conditions": "@sim-nao:não",
+      "event_name": "filled",
+      "dialog_node": "handler_2_1585962374719",
+      "previous_sibling": "handler_3_1585962327467"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1585961049702",
+      "context": {
+        "sim_nao_3": "@sim-nao"
+      },
+      "conditions": "@sim-nao",
+      "event_name": "input",
+      "dialog_node": "handler_10_1585961049707"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para @processos_seletivo, o tempo de aprovação máximo é de 2 dias úteis"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1583622905276",
+      "conditions": "@processos_seletivo",
+      "dialog_node": "response_7_1583622915102"
+    },
+    {
+      "type": "standard",
+      "title": "Aprovação do comprovante",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para qual processo seletivo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#aprovar_documento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1583622869758",
+      "previous_sibling": "node_1_1585960366657"
+    },
+    {
+      "type": "standard",
+      "title": "Reserva de Documento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Não. O documento só é reservado após a finalização do processo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#reserva_documento",
+      "dialog_node": "node_6_1583622826435",
+      "previous_sibling": "node_2_1583622869758"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De nada. Posso ajudar com mais alguma coisa? "
+              },
+              {
+                "text": "Que isso! Obrigado por usar nosso sistema"
+              },
+              {
+                "text": "Valeu! Você mandou bem"
+              },
+              {
+                "text": "Imagina, obrigado você"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecimento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1585358547506",
+      "previous_sibling": "node_5_1588986822553"
+    },
+    {
+      "type": "frame",
+      "title": "Digitalizar documento com Espaços {Slots}",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#digitalizar_documento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1585960366657",
+      "previous_sibling": "node_3_1585358547506"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1583622826435",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Saudação",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#saudar",
+      "dialog_node": "node_5_1588986822553",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Ajuda",
+  "language": "pt-br",
+  "description": "Essa skill ajuda o cliente a achar o melhor aparelho para ele."
+}
