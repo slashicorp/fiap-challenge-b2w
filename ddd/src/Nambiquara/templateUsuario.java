@@ -2,7 +2,7 @@ package Nambiquara;
 
 import java.io.Serializable;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class templateUsuario extends nambiquaraRh implements Serializable{
     private String nome;
@@ -75,17 +75,25 @@ public class templateUsuario extends nambiquaraRh implements Serializable{
 
         String login = JOptionPane.showInputDialog(null, "Cadastre seu login! 'primeiro.ultimonome' ",".:Cadastro:.", 1);
         setLogin(login);
+
+        JPasswordField pwd = new JPasswordField();
+        int senha = JOptionPane.showConfirmDialog(null, pwd, "Digite sua senha:", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+        if (senha == JOptionPane.OK_OPTION) {
+            String passwod = new String(pwd.getPassword());
+            System.err.println("Você colocou: " + passwod);
+            setSenha(passwod);
+        }
+
         String pretencaoSalarial = JOptionPane.showInputDialog(null, "Digite seu pretencaoSalarial!", ".:Cadastro:.", 1);
         setPretencaoSalarial(pretencaoSalarial);
-        int deficienciayn = JOptionPane.showConfirmDialog(null, "Digite seu deficiencia!", ".:Cadastro:.",JOptionPane.YES_NO_OPTION);
+        int deficienciayn = JOptionPane.showConfirmDialog(null, "Portador de deficiência? ", ".:Cadastro:.",JOptionPane.YES_NO_OPTION);
             if (deficienciayn == JOptionPane.YES_OPTION) {
                 deficiencia = true;
             } else {
                 deficiencia = false;
             }
         setDeficiencia(deficiencia);
-        String senha = JOptionPane.showInputDialog(null, "Digite sua senha!", ".:Cadastro:.", 1);
-        setEmail(senha);
+
         setNivel("CANDIDATO");
     }
 
