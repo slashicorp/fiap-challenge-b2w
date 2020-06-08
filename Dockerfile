@@ -8,8 +8,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN yum -y install httpd
 
 WORKDIR /var/www/html/
-
-COPY ["Responsive Web Developmnt/", "/var/www/html/"]
+COPY web /var/www/html/
 
 CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
 
