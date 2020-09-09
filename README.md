@@ -1,8 +1,8 @@
-# FIAP - GH3Corp Challenge B2W
+# FIAP - SLASHICORP Challenge B2W
 
 Um grupo composto por alunos do curso de `TDST` noturno da `FIAP`.
 
-## Integrantes do grupo Gh3
+## Integrantes do grupo SLASHICORP
 
 - [x] Alexandre Pacheco do Couto (85657)
 - [x] Allan Phyllyp Reis (85619)
